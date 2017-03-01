@@ -1,7 +1,3 @@
-/* 
- * author: Avish Jain
- * Date : 20170301
- */
 import java.util.Scanner;
 
 public class Palindrome 
