@@ -1,3 +1,6 @@
+/*
+*author : Avish Jain
+*/
 import java.util.Scanner;
 
 public class Palindrome 
