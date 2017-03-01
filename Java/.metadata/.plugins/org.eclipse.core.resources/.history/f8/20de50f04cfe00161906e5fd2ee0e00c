@@ -1,0 +1,51 @@
+import java.util.Scanner;
+/*
+public class Palindrome 
+{
+	public static void main(String[] args) 
+	{
+		String reverse=" ";
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter String to check palindrome");
+		String input=sc.next();
+		int length=input.length();
+		
+		for(int i=length-1;i>=length;i--)
+		{
+			reverse=reverse+input.charAt(i);
+		}
+		System.out.println("INput "+input);
+
+		System.out.println("output" +reverse);
+		if(input==reverse)
+			System.out.println("It is Palindrome");
+		else 
+			System.out.println("Not Palindrome");		
+	}
+}*/
+public class Palindrome 
+{
+	private String text,reverse;
+	Scanner sc=new Scanner(System.in);
+
+	public void input()
+	{
+		System.out.print("Enter String: ");
+		text=sc.next();
+		System.out.println(text);
+		char ch[]=text.toCharArray();
+		for(int  i=ch.length-1;i>=ch.length;i--)
+		{
+			reverse+= ch[i];
+		}
+		System.out.println(reverse);
+	}
+	
+	
+	public static void main(String[] args)
+	{
+		Palindrome p=new Palindrome();
+		p.input();
+		
+	}
+}
